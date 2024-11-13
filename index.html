@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Fitness Gear Hub</title>
+</head>
+<body>
+   
+<header >
+    <div class="container">
+        <nav class="header-right">
+            <ul>
+                <li><h1>FITNESS <span id="Gear">GEAR</span> HUB</h1></li>
+                <li><a href="#menu" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#categories">CATEGORIES</a></li>
+                <li><a href="#products">SHOP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><button id="loginButton">Login</button></li>
+                <li><button id="SignUpButton" onclick="showSignup()">SignUp</button></li>
+                <li><button id="showUsersButton">ShowUsers</button></li>
+            </ul>
+            
+        </nav>
+    </div>
+</header>
+
+<section id="menu" class="wide-section">
+    <div class="container">
+        <h1>There Is Always, A Next Level To Reach...</h1><br><br><br>
+        <p>I Help You Get Double The EXP!</p><br><br><br>
+        <button id="bcmMember" onclick="showSignup()">BECOME A MEMBER</button> <br> <br> <br> <br>
+        <button id="logoutButton" onclick="logout()">LogOut</button>
+    </div>
+</section>
+
+<section id="about">
+    <br><br><br>
+    <div class="container">
+        
+        <h2>ABOUT <span id="redtext">US</span></h2><br><br>
+        <p>Welcome to Fitness Gear Hub, your ultimate destination for all things fitness! We are passionate about helping individuals achieve their fitness goals and lead healthier lifestyles.</p>
+        <p>At Fitness Gear Hub, we offer a wide range of high-quality fitness equipment, supplements, and programs to meet the diverse needs of our customers. Whether you're a beginner looking to start your fitness journey or a seasoned athlete aiming to take your performance to the next level, we've got you covered.</p>
+        <p>Our team consists of fitness enthusiasts and experts who are dedicated to providing exceptional customer service and support. We strive to create a welcoming and supportive community where everyone feels empowered to reach their full potential.</p>
+        <p>Thank you for choosing Fitness Gear Hub. Let's embark on this journey together and achieve our fitness goals!</p>
+    </div>
+</section>
+
+<section id="categories">
+    <div class="container2">
+        <div class="category">
+            <img src="images/gymicon.png" alt="Gym Equipment">
+            <h2>Gym Equipment</h2>
+            <p>This category includes various types of fitness equipment used for strength training, cardio, and functional training. Examples include treadmills, dumbbells, barbells, weight benches, resistance bands, and more. Gym equipment is essential for building muscle, improving endurance, and achieving overall fitness goals.</p>
+            <a href="#idofgymprod">Discover More</a>
+        </div>
+        <div class="category">
+            <img src="images/boxingicon.png" alt="Boxing">
+            <h2>Boxing</h2>
+            <p>Boxing equipment encompasses gear used for boxing training and competitions. It includes items such as boxing gloves, punching bags, hand wraps, speed bags, boxing shoes, and protective gear like headgear and mouthguards. Boxing training helps improve cardiovascular health, agility, coordination, and strength while providing an effective full-body workout.</p>
+            <a href="#idofboxing">Discover More</a>
+        </div>
+        <div class="category">
+            <img src="images/supplementsicon.png" alt="Supplements">
+            <h2>Supplements</h2>
+            <p>This category consists of dietary supplements designed to support fitness and health goals. Supplements may include protein powders, pre-workouts, post-workout recovery formulas, vitamins, minerals, amino acids, and performance enhancers. Supplements can help enhance athletic performance, promote muscle growth, aid in recovery, and fill nutritional gaps in the diet.</p>
+            <a href="#idofsupp">Discover More</a>
+        </div>
+        <div class="category">
+            <img src="images/bodybuildingicon.png" alt="BodyBuilding Programs">
+            <h2>BodyBuilding Programs</h2>
+            <p>Bodybuilding programs are structured workout plans designed to maximize muscle growth, strength, and definition. These programs typically involve resistance training with weights, focusing on specific muscle groups through various exercises such as squats, deadlifts, bench presses, and curls. Bodybuilding programs often include nutrition guidance and supplementation to support muscle recovery and growth.</p>
+            <a href="#idofbody">Discover More</a>
+        </div>
+        <div class="category">
+            <img src="images/powerliftingicon.png" alt="PowerLifting Programs">
+            <h2>PowerLifting Programs</h2>
+            <p> Powerlifting programs are training routines tailored for individuals interested in improving their strength in the three main powerlifting lifts: squat, bench press, and deadlift. These programs emphasize heavy lifting with low repetitions to increase maximal strength. Powerlifting training focuses on technique, strength development, and progressively increasing weight to achieve new personal records (PRs).</p>
+            <a href="#idofpower">Discover More</a>
+        </div>
+        <div class="category">
+            <img src="images/yogaicon.png" alt="Yoga Programs">
+            <h2>Yoga Programs</h2>
+            <p>Yoga programs involve practicing various yoga poses, breathing exercises, and meditation techniques to improve flexibility, balance, strength, and mental well-being. Yoga offers a holistic approach to fitness, promoting relaxation, stress relief, and mindfulness. Yoga programs may include different styles such as Hatha, Vinyasa, Ashtanga, Bikram, and Yin yoga, catering to different preferences and goals.</p>
+            <a href="#idofyoga">Discover More</a>
+        </div>
+        
+    </div>
+</section>
+<section id="products">
+    <section id="gymproducts" class="category-section">
+        <div class="container3">
+            <h2 id="idofgymprod">Gym Equipment</h2>
+            <div class="product">
+                <img src="images/threadmill.png" alt="Gym Product 1">
+                <h3>Threadmill</h3>
+                <p>$99.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/benchpress.png" alt="Gym Product 2">
+                <h3>Bench Press</h3>
+                <p>$59.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/resistanceband.png" alt="Gym Product 3">
+                <h3>Resistance Bands</h3>
+                <p>$2.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="boxingproducts" class="category-section">
+        <div class="container3">
+            <h2 id="idofboxing">Boxing</h2>
+            <div class="product">
+                <img src="images/boxinggloves.png" alt="Boxing Product 1">
+                <h3>EverLast Gloves</h3>
+                <p>$39.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/boxingshoes.png" alt="Boxing Product 2">
+                <h3>Boxing Shoes</h3>
+                <p>$49.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/spartanbag.png" alt="Boxing Product 3">
+                <h3>SPARTAN FIGHTER Heavy Bag</h3>
+                <p>$99.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="supplementproducts" class="category-section">
+        <div class="container3">
+            <h2 id="idofsupp">Supplements</h2>
+            <div class="product">
+                <img src="images/proteinpowder.png" alt="Supplement Product 1">
+                <h3>Protein Powder</h3>
+                <p>$69.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/preworkout.png" alt="Supplement Product 2">
+                <h3>Pre Workout Mix</h3>
+                <p>$39.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/testosil.png" alt="Supplement Product 3">
+                <h3>TESTOSIL Gold</h3>
+                <p>$29.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="yogaproducts" class="category-section">
+        <div class="container3">
+            <h2 id="idofyoga">Yoga Programs</h2>
+            <div class="product">
+                <img src="images/yogacourse1.png" alt="Yoga Program 1">
+                <h3>Beginner Yoga Program</h3>
+                <p>$29.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/yogaicon2.png" alt="Yoga Program 2">
+                <h3>Intermediate Yoga Program</h3>
+                <p>$39.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/yogaicon3.png" alt="Yoga Program 3">
+                <h3>Advanced Yoga Program</h3>
+                <p>$49.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="bodybuildingproducts" class="category-section">
+        <div class="container3">
+            <h2 id="idofbody">Bodybuilding Programs</h2>
+            <div class="product">
+                <img src="images/bodycourse1.png" alt="Bodybuilding Program 1">
+                <h3>Beginner BodyBuilding Program</h3>
+                <p>$49.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/bodycourse2.png" alt="Bodybuilding Program 2">
+                <h3>Intermediate BodyBuilding Program</h3>
+                <p>$59.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/bodycourse3.png" alt="Bodybuilding Program 3">
+                <h3>Advanced BodyBuilding Program</h3>
+                <p>$69.99</p>
+                <button onclick="redirectToPayment()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="powerliftingproducts" class="category-section">
+        <div class="container3">
+            <h2 id="idofpower">Powerlifting Programs</h2>
+            <div class="product">
+                <img src="images/powerlifting1.png" alt="Powerlifting Program 1">
+                <h3>Beginner PowerLifting Program</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/powerlifting2.png" alt="Powerlifting Program 2">
+                <h3>Intermediate PowerLifting Program</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/powerlifting3.png" alt="Powerlifting Program 3">
+                <h3>Advanced PowerLifting Program</h3>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+</section>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<br><br><br>
+<footer>
+    <div class="row social" align="center">
+        <a href =''><i class="fab fa-youtube"></i></a>
+        <a href=''><i class='fab fa-facebook'></i></a>
+        <a href=''><i class='fab fa-instagram'></i></a>
+        <a href=""> <i class="fab fa-discord"></i></a>
+    </div>
+    <br><br>
+    <div class="container">
+        <p>All Rights Reserved &copy; 2024 Fitness Gear Hub</p>
+    </div>
+</footer>
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('loginPopup')">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="login(event)">
+            <div class="form-group">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('login-password')"><i class="fas fa-eye"></i></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div id="signupPopup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('signupPopup')">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signup-form" onsubmit="signup(event)">
+            <div class="form-group">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="signup-name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
